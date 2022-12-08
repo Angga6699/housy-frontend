@@ -3,7 +3,7 @@ def rname = "origin"
 def dir = "~/housy-frontend/"
 def credential = 'cicd'
 def server = 'cicd@103.179.56.6'
-def img = 'reiya24/housy-frontend'
+def img = 'angga6699/housy-frontend'
 def cont = 'frontend'
 
 pipeline {
