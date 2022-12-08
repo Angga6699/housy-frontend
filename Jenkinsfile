@@ -31,7 +31,7 @@ pipeline {
                     sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
                     echo "Building Image"
                     cd ${dir}
-                    docker build -t ${img}:latest .
+                    docker build -t ${img}:${env.BUILD_ID} .
                     exit
                     EOF"""
                 }
