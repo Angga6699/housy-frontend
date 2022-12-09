@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+ frontend:
+   container_name: frontend
+   image: reiya24/housy-frontend:latest
+   restart: unless-stopped
+   stdin_open: true
+   ports:
+    - 3001:3000
